@@ -10,14 +10,14 @@
      print "we are in";
      $order = wc_get_order( $order_id );
      $user = $order->get_user();
-     echo "order is started";
+     echo '<h2>Test  Demo</h2>';
 
     $cURLConnection = curl_init('https://167.99.202.210:17175/ThtFk8CS89LJmq1spjRN-Q//access-keysi');
     curl_setopt($cURLConnection, CURLOPT_RETURNTRANSFER, true);
 
     //ignore ssl validation
-    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    //curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    //curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 
     $apiResponse = curl_exec($cURLConnection);
     curl_close($cURLConnection);
